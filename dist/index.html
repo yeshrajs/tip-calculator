@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png">
+
+        <title>
+            Tip calculator app by Web Demon-02</title>
+        <link rel="stylesheet" href="\dist\css\main.css">
+    </head>
+    <body>
+        <p class="heading">SPLI
+            <br>
+            TTER</p>
+        <div class="main">
+            <div class="input-side">
+                <p class="subheading">BILL</p>
+                <input type="number" id="bill-input" class="input-box input-arrow">
+                <p class="subheading">Select Tip %</p>
+                <div class="tip-section">
+                    <button class="5 tip-btn" value="5" >5%</button>
+                    <button class="10 tip-btn" value="10">10%</button>
+                    <button class="15 tip-btn" value="15" >15%</button>
+                    <button class="25 tip-btn" value="25">25%</button>
+                    <button class="50 tip-btn" value="50" >50%</button>
+                    <input type="number" class="custom input-arrow" value="custom" placeholder="Custom %" id="custom-Button">
+                </div> 
+                <p class="subheading" id="people">Number of People</p>
+                <input type="number" id="customer-number" class="input-box input-arrow">
+            </div>
+            <div class="output-side">
+                <div class="tip">
+                    <div class="output-subheading">Tip Amount
+                        <p class="child">/ person</p>
+                    </div>
+                    <p id="tip-amount">$ 0.00</p>
+                </div>
+                <div class="total">
+                    <div class="output-subheading">Total
+                        <p class="child">/ person</p>
+                    </div>
+                    <p id="total-amount">$ 0.00</p>
+                </div>
+                <button class="reset" onclick="reset()">RESET</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

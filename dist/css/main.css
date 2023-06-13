@@ -1,0 +1,163 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 10rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.main {
+  width: 50vw;
+  background-color: hsl(0, 0%, 100%);
+  margin: 2rem 25vw;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  height: 50vh;
+  /* Firefox */
+}
+.main .input-side {
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  flex-grow: 0.1;
+}
+.main .input-side .subheading {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.main .input-side .input-box {
+  width: 100%;
+  border-color: hsl(186, 14%, 43%);
+  border-width: 3px;
+  height: 1.5rem;
+}
+.main .input-side .tip-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.main .input-side .tip-section .tip-btn {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.main .input-side .tip-section .tip-btn:hover {
+  background-color: hsl(180, 51%, 52%);
+  color: black;
+}
+.main .input-side .tip-section .custom {
+  background-color: hsl(183, 100%, 15%);
+  height: 2.3rem;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+.main .output-side {
+  width: 100%;
+  margin: 0;
+  padding-top: 1.5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 10px;
+}
+.main .output-side .tip {
+  padding-left: 2rem;
+  display: flex;
+  font-weight: 600;
+}
+.main .output-side .tip #tip-amount {
+  flex-grow: 0.3;
+  text-align: right;
+  font-size: 30px;
+  color: hsl(180, 51%, 52%);
+  margin-top: 0.2rem;
+}
+.main .output-side .total {
+  padding-left: 2rem;
+  display: flex;
+  font-weight: 600;
+}
+.main .output-side .total #total-amount {
+  flex-grow: 0.3;
+  text-align: right;
+  font-size: 30px;
+  color: hsl(180, 51%, 52%);
+  margin-top: 0.2rem;
+}
+.main .output-side .output-subheading {
+  flex-grow: 0.5;
+}
+.main .output-side .output-subheading .child {
+  margin-top: 0.1rem;
+  color: rgb(155, 151, 151);
+}
+.main .output-side .reset {
+  margin-top: 4rem;
+  margin-right: 15%;
+  margin-left: 15%;
+  width: 70%;
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: hsl(180, 51%, 52%);
+  font-weight: 600;
+}
+.main input::-webkit-outer-spin-button,
+.main input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+.main ::placeholder {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 1150px) {
+  .main {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    margin-top: 2rem;
+  }
+  .main {
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
+  }
+  .main .output-side {
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .custom {
+    width: 100%;
+  }
+}
